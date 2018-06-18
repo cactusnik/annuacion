@@ -1,0 +1,24 @@
+form.form.form_get-started
+    .form__row
+        .form__row
+            .form__field
+                label.form__label НYour Name *
+                input.form__inp(type='text', name='params[FirstName]', placeholder='First Name', required)
+                input.form__inp(type='text', name='params[LastName]', placeholder='Last Name', required)
+        .form__row
+            .form__field
+                label.form__label Email *
+                input.form__inp(type='email', name='params[Email]', placeholder='Email', required)
+            .form__field
+                label.form__label Phone
+                input.form__inp(type='tel', name='params[Phone]', placeholder='Phone')
+    .form__row
+        .form__row
+            .form__field
+                label.form__label Your Gender *
+                input.form__inp(type='radio', name='params[Gender]', checked)
+                input.form__inp(type='radio', name='params[Gender]')
+        .form__row
+            .form__field
+                input.btn(type='submit' value='Apply Now')
+

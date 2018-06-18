@@ -1,3 +1,18 @@
 include ./mixin-header
 
-+header()
+//+header()
+header.main-header
+    .main-header__row
+        .main-header__logo-wrap
+            include ../../../components/others/logo/logo
+        .main-header__nav
+            include ../../../components/navs/nav/nav
+        .main-header__apply
+            button.btn Apply Now
+    .main-header__row
+        .main-header__content
+            h2.main-header__title Have you ever worked in USA?
+            h3.main-header__subtitle If you worked in USA on a holiday/work visa you may
+                | have thousands in unclaimed superannuation waiting!
+        .main-header__img-wrap
+            img.main-header__img(src='images/content/pic.png')

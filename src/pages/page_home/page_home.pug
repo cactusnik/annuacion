@@ -1,149 +1,18 @@
 extends ../../layouts/layout-main/layout-main
 
 block content
-	header.main-header
-		.main-header__row
-			.main-header__logo-wrap
-				img.main-header__logo
-			nav.main-header__nav.nav
-				ul.nav__list
-					li.nav__item
-						a.nav__link(href="javascript:void(0)") Home
-						a.nav__link(href="javascript:void(0)") FAQ
-						a.nav__link(href="javascript:void(0)") about us
-						a.nav__link(href="javascript:void(0)") call us
-			.main-header__apply
-				button.btn Apply Now
-		.main-header__row
-			.main-header__content
-				h2.main-header__title Have you ever worked in USA?
-				h3.main-header__subtitle If you worked in USA on a holiday/work visa you may
-					| have thousands in unclaimed superannuation waiting!
-			.main-header__img-wrap
-				img.main-header__img
 	main
-		section.claim.container
-			.claim__icon-wrap
-				img.claim__icon
-			.claim__content
-				h2.claim__title Claim Your Super Annuation
-				p.claim__text <strong>Annuacion only charges 12% of the super annuation return.</strong> Superannuation is an employer contribution (usually 9.5% of your salary) that is put aside into a superannuation fund to be accessed during retirement.
-		section.process
-			.process__container.container
-				header.process__header
-					h2.process__title The Process
-					h3.process__subtitle annuacion
-				ul.process__list
-					li.process__item
-						.process__step
-							.process__icon-wrap
-								img.process__icon
-							.process__step-content
-								h3.process__step-title Apply
-								p.process__step-text You fill in our free application form, provide us with authority to act on
-									| your behalf to track your superannuation down and specify the payment details of where you’d like the refund deposited.
-					li.process__item
-						.process__step
-							.process__icon-wrap
-								img.process__icon
-							.process__step-content
-								h3.process__step-title Apply
-								p.process__step-text You fill in our free application form, provide us with authority to act on
-									| your behalf to track your superannuation down and specify the payment details of where you’d like the refund deposited.
-					li.process__item
-						.process__step
-							.process__icon-wrap
-								img.process__icon
-							.process__step-content
-								h3.process__step-title Apply
-								p.process__step-text You fill in our free application form, provide us with authority to act on
-									| your behalf to track your superannuation down and specify the payment details of where you’d like the refund deposited.
-					li.process__item
-						.process__step
-							.process__icon-wrap
-								img.process__icon
-							.process__step-content
-								h3.process__step-title Apply
-								p.process__step-text You fill in our free application form, provide us with authority to act on
-									| your behalf to track your superannuation down and specify the payment details of where you’d like the refund deposited.
-		section.steps.container
-			h2.steps__title The Process
-			h3.steps__subtitle 5 Simple Steps To Claiming Your Refund!
-			.steps__tab.tab
-				.tab__nav
-					button.tab__btn Step 1
-					button.tab__btn Step 2
-					button.tab__btn Step 3
-					button.tab__btn Step 4
-					button.tab__btn Step 5
-				.tab__container
-					.tab__block
-						.tab__icon-wrap
-							img.tab__icon
-						.tab__content
-							h3.tab__title Enquire
-							p.tab__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-								|	labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-								|	aliquip ex ea commodo consequat.
-					.tab__block
-						.tab__icon-wrap
-							img.tab__icon
-						.tab__content
-							h3.tab__title Enquire
-							p.tab__text    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-								|	labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-								|	aliquip ex ea commodo consequat.
-					.tab__block
-						.tab__icon-wrap
-							img.tab__icon
-						.tab__content
-							h3.tab__title Enquire
-							p.tab__text    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-								| labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-								| aliquip ex ea commodo consequat.
-					.tab__block
-						.tab__icon-wrap
-							img.tab__icon
-						.tab__content
-							h3.tab__title Enquire
-							p.tab__text    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-								| labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-								| aliquip ex ea commodo consequat.
-					.tab__block
-						.tab__icon-wrap
-							img.tab__icon
-						.tab__content
-							h3.tab__title Enquire
-							p.tab__text    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-								| labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-								| aliquip ex ea commodo consequat.
-		section.news
-			.news__container
-				h2.news__title What is Superannuation?
-				h3.news__subtitle Superannuation is an employer contribution (usually 9.5% of your salary) that is put aside into a superannuation fund to be accessed
-					| during retirement. If you are not an Australian citizen and have worked in Australia for any period of time then you may
-					| have unclaimed superannuation that can be paid out to you in a lump sum.
-				ul.news__list
-					li.news__item
-						article.news-post
-							.news-post__img-wrap
-								img.news-post__img
-							.news-post__content
-								h3.news-post__title Why choose BackPay to locate my superannuation?
-								p.news-post__text Reclaiming your lost superannuation can be a tricky process, your super may be spread amongst several funds
-									| and you may not have immediate access to the information required to track them down. BackPay simplifies this process to collect
-									| only the very basic information required and assists in locating things such as your Australian Tax File Number which can easily be misplaced.
-		section.get-started
-			h2.get-started__title Get Started
-			form.get-started__form.form-get-started
-				.form-get-started__row
-					.form-get-started__field
-				.form-get-started__row
+		include ../../components/others/claim/claim
+		include ../../components/others/process/process
+		include ../../components/others/steps/steps
+		include ../../components/others/news/news
+		include ../../components/others/get-started/get-started
 		footer.main-footer
 			.main-footer__row
-				.main-footer__social.social
+				.main-footer__social
+					include ../../components/others/social/social
 				form.main-footer__form-join.form-join
-					.form-join__row
+					include ../../components/forms/form_join/form_join
 			.main-footer__row
 				.main-footer__contact
 				.main-footer__nav.nav.nav_footer
