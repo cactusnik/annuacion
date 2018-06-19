@@ -1,3 +1,40 @@
 .header.header_main {
+  background-color: #204992;
 
+  .header__container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  .header__row {
+    display: flex;
+  }
+
+  .header__row_1 {
+    justify-content: space-between;
+    align-items: center;
+    height: 46px;
+    margin-top: 58px;
+  }
+
+  .header__content {
+    min-width: 415px;
+    margin-top: 115px;
+    color: #fff;
+  }
+
+  .header__title {
+    margin-bottom: 10px;
+    font-size: 26px;
+  }
+
+  .header__subtitle {
+    color: #dbe1ed;
+    font-size: 16px;
+    line-height: 25px;
+  }
 }

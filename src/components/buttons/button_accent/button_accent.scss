@@ -1,0 +1,15 @@
+.button.button_accent {
+  padding: 15px 22px 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: $color-accent;
+  color: #204992;
+  font-size: 16px;
+  line-height: 23px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten($color-accent, 15%);
+    color: darken(#204992, 15%);
+  }
+}

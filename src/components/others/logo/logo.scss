@@ -1,0 +1,15 @@
+.logo{
+  display: flex;
+  align-items: center;
+
+  .logo__img {
+    stroke: #fff;
+  }
+
+  .logo__text {
+    margin-left: 15px;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 0.69px;
+  }
+}
