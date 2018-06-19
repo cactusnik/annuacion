@@ -1,0 +1,33 @@
+.claim {
+  display: flex;
+  justify-content: space-between;
+  max-width: 976px;
+  padding: 98px 24px;
+  margin: 0 auto;
+
+  .claim__icon-wrap {
+    display: flex;
+    width: 208px;
+    height: 126px;
+  }
+
+  .claim__icon {
+  }
+
+  .claim__content {
+    width: 650px;
+  }
+
+  .claim__title {
+    margin-top: 14px;
+    color: $color-title;
+    font-size: 25px;
+  }
+
+  .claim__text {
+    margin-top: 13px;
+    color: $color-text;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
