@@ -1,23 +1,42 @@
 form.form.form_get-started
-    .form__row
+    .form__row-1
+        .form__row-1-1
+            fieldset.form__fieldset
+                legend.form__legend НYour Name
+                    sup *
+                .form__elem
+                    span.form__icon.form__icon_person
+                    input.form__inp.form__inp_grow(type='text', name='params[FirstName]', placeholder='First Name', required)
+                    input.form__inp.form__inp_grow(type='text', name='params[LastName]', placeholder='Last Name', required)
+        .form__row-1-2
+            .form__row-1-2-1
+                .form__field
+                    label.form__label Email
+                        sup *
+                    .form__elem
+                        span.form__icon.form__icon_email
+                        input.form__inp(type='email', name='params[Email]', placeholder='Email', required)
+            .form__row-1-2-2
+                .form__field
+                    label.form__label Phone
+                    .form__elem
+                        span.form__icon.form__icon_phone
+                        input.form__inp(type='tel', name='params[Phone]', placeholder='Phone')
+    .form__row-2
         .form__row
-            .form__field
-                label.form__label НYour Name *
-                input.form__inp(type='text', name='params[FirstName]', placeholder='First Name', required)
-                input.form__inp(type='text', name='params[LastName]', placeholder='Last Name', required)
-        .form__row
-            .form__field
-                label.form__label Email *
-                input.form__inp(type='email', name='params[Email]', placeholder='Email', required)
-            .form__field
-                label.form__label Phone
-                input.form__inp(type='tel', name='params[Phone]', placeholder='Phone')
-    .form__row
-        .form__row
-            .form__field
-                label.form__label Your Gender *
-                input.form__inp(type='radio', name='params[Gender]', checked)
-                input.form__inp(type='radio', name='params[Gender]')
+            fieldset.form__fieldset
+                legend.form__legend Your Gender
+                    sup *
+                .radio
+                    input.radio__hidden-field(id='radio-gender-param-1' type='radio', name='params[Gender]', checked)
+                    label.radio__element(for='radio-gender-param-1')
+                        span.radio__icon
+                        span.radio__text Male
+                .radio
+                    input.radio__hidden-field(id='radio-gender-param-2' type='radio', name='params[Gender]', checked)
+                    label.radio__element(for='radio-gender-param-2')
+                        span.radio__icon
+                        span.radio__text Female
         .form__row
             .form__field
                 input.btn(type='submit' value='Apply Now')
