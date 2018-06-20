@@ -1,0 +1,28 @@
+.news {
+  margin-bottom: 100px;
+  
+  .news__header {
+    padding-top: 102px;
+    padding-bottom: 324px;
+    background-color: $color-blue;
+    color: #fff;
+    text-align: center;
+  }
+
+  .news__container {
+    max-width: 976px;
+    margin: 0 auto;
+  }
+
+  .news__title {
+    margin-bottom: 18px;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .news__subtitle {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 23px;
+  }
+}
