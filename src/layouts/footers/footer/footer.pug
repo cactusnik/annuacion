@@ -1,26 +1,41 @@
-footer.main-footer
-    .main-footer__row
-        .main-footer__social
-            include ../../../components/others/social/social
-        form.main-footer__form-join.form-join
-            include ../../../components/forms/form_join/form_join
-    .main-footer__row
-        .main-footer__contact
-        .main-footer__nav.nav.nav_footer
-            ul.nav__list
-                li.nav__item
-                    a.nav__link(href="javascript:void(0)") Home
-                    a.nav__link(href="javascript:void(0)") FAQ
-                    a.nav__link(href="javascript:void(0)") about us
-                    a.nav__link(href="javascript:void(0)") call us
-    .main-footer__row
-        .main-footer__row
-            .main-footer__logo-wrap
+footer.footer.footer_main
+    .footer__container
+        .footer__row-1
+            .footer__social
+                include ../../../components/others/social/social
+            div.footer__form-join
+                include ../../../components/forms/form_join/form_join
+        .footer__row-2
+            .footer__contact
+                .footer__contact-item
+                    .footer__contact-title Email:
+                    a.footer__contact-elem(href='mailto:borer.arne@annuciaon.com') borer.arne@annuciaon.com
+                .footer__contact-item
+                    .footer__contact-title Contact Us:
+                    a.footer__contact-elem(href='tel:610291196422') +61 (0) 2 9119 6422
+            .footer__nav.nav.nav_footer
+                ul.nav__list
+                    li.nav__item
+                        a.nav__link(href="javascript:void(0)") Home
+                    li.nav__item
+                        a.nav__link(href="javascript:void(0)") FAQ
+                    li.nav__item
+                        a.nav__link(href="javascript:void(0)") about us
+                    li.nav__item
+                        a.nav__link(href="javascript:void(0)") call us
+        .footer__row-3
+            .footer__logo-wrap
                 include ../../../components/others/logo/logo_footer/logo_footer
-            .main-footer__nav_privacy.nav.nav_privacy
+            .footer__nav-privacy.nav.nav_privacy
                 ul.nav__list
                     li.nav__item
                         a.nav__link(href="javascript:void(0)") Privacy
+                    li.nav__item
                         a.nav__link(href="javascript:void(0)") Disclaimer
+                    li.nav__item
                         a.nav__link(href="javascript:void(0)") Copyright 2017
-        address.main-footer__addtess
+        address.footer__row-4
+            .footer__adress 2779 Roberts Loop Suite 101
+            .footer__adress 038 Zboncak Burg Suite 073
+
+

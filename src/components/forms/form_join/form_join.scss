@@ -1,0 +1,37 @@
+.form.form_join {
+  margin-top: 28px;
+  margin-left: 60px;
+
+  .form__title {
+    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 35px;
+  }
+
+  .form__inp {
+    width: 240px;
+    padding: 14px;
+  }
+
+  .form__inp {
+    height: 50px;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .form__row-1 {
+    display: flex;
+  }
+
+  .form__button {
+    height: 50px;
+    width: 60px;
+    padding: 0;
+    border-radius: 0 5px 5px 0;
+    color: #303847;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
