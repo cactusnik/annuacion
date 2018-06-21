@@ -61,6 +61,24 @@
     border-right: 1px solid $color-border;
   }
 
+  .form__icon_person {
+    background-image: url('../images/content/firstname.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .form__icon_email {
+    background-image: url('../images/content/Email.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .form__icon_phone {
+    background-image: url('../images/content/phone.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
   .form__inp {
     padding: 14px;
     border: 0;

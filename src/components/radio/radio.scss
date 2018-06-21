@@ -1,10 +1,17 @@
 .radio {
   flex: 0 0 calc(50% - 9px);
   max-width: calc(50% - 9px);
-  cursor: pointer;
 
   .radio__hidden-field {
     display: none;
+  }
+
+  .radio__hidden-field:checked ~ .radio__element {
+    border-color: $color-accent;
+  }
+
+  .radio__hidden-field:checked ~ .radio__element > .radio__text {
+    color: $color-accent;
   }
 
   .radio__element {
@@ -15,11 +22,24 @@
 
     border-radius: 5px;
     border: 1px solid #c5d8d8;
+    cursor: pointer;
   }
 
   .radio__icon {
     width: 18px;
     height: 21px;
     margin-right: 15px;
+  }
+
+  .radio__icon_male {
+    background-image: url('../images/content/male.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .radio__icon_female {
+    background-image: url('../images/content/female.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }

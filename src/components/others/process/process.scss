@@ -72,15 +72,17 @@
     &:before {
       content: '';
       position: absolute;
-      left: -20px;
-
-      width: 0;
-      height: 0;
-
-      border-top: 10px solid transparent;
-      outline-top: 1px solid green;
-      border-right: 20px solid #00d7ff;
-      border-bottom: 10px solid transparent;
+      background: #fff;
+      left: -10px;
+      top: 37px;
+      width: 18px;
+      height: 18px;
+      border-bottom: 1px solid #00d7ff;
+      border-left: 1px solid #00d7ff;
+      //box-shadow: 1px 1px 1px #00d7ff; /* Добавляем тень для уголка */
+      z-index: 1; /* Прячем за основным блоком */
+      transform: rotate(45deg); /* Поворачиваем на 45º */
+      -webkit-transform: rotate(45deg);
     }
   }
 
