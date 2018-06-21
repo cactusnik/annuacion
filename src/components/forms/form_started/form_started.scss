@@ -3,8 +3,8 @@
   justify-content: space-between;
 
   .form__row-1 {
-    flex: 0 0 640px;
-    max-width: 640px ;
+    flex: 0 0 635px;
+    max-width: 635px ;
   }
 
   .form__row-1-2 {
@@ -21,6 +21,11 @@
     max-width: 300px ;
   }
 
+  .form__row-2-1-1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .form__fieldset {
     padding: 0;
     margin-bottom: 20px;
@@ -29,7 +34,7 @@
 
   .form__legend, .form__label {
     display: inline-block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     color: $color-title;
     font-size: 15px;
     font-weight: 700;
@@ -51,8 +56,8 @@
 
   .form__icon {
     display: inline-block;
-    flex: 0 0 49px;
-    max-width: 49px;
+    flex: 0 0 46px;
+    max-width: 46px;
     border-right: 1px solid $color-border;
   }
 
@@ -69,5 +74,11 @@
       border-bottom-right-radius: 5px;
       border-top-right-radius: 5px;
     }
+  }
+
+  .form__submit {
+    width: 100%;
+    margin-top: 31px;
+    line-height: 27px;
   }
 }

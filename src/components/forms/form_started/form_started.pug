@@ -23,21 +23,22 @@ form.form.form_get-started
                         span.form__icon.form__icon_phone
                         input.form__inp(type='tel', name='params[Phone]', placeholder='Phone')
     .form__row-2
-        .form__row
+        .form__row-2-1
             fieldset.form__fieldset
                 legend.form__legend Your Gender
                     sup *
-                .radio
-                    input.radio__hidden-field(id='radio-gender-param-1' type='radio', name='params[Gender]', checked)
-                    label.radio__element(for='radio-gender-param-1')
-                        span.radio__icon
-                        span.radio__text Male
-                .radio
-                    input.radio__hidden-field(id='radio-gender-param-2' type='radio', name='params[Gender]', checked)
-                    label.radio__element(for='radio-gender-param-2')
-                        span.radio__icon
-                        span.radio__text Female
+                .form__row-2-1-1
+                    .radio
+                        input.radio__hidden-field(id='radio-gender-param-1' type='radio', name='params[Gender]', checked)
+                        label.radio__element(for='radio-gender-param-1')
+                            span.radio__icon
+                            span.radio__text Male
+                    .radio
+                        input.radio__hidden-field(id='radio-gender-param-2' type='radio', name='params[Gender]', checked)
+                        label.radio__element(for='radio-gender-param-2')
+                            span.radio__icon
+                            span.radio__text Female
         .form__row
             .form__field
-                input.btn(type='submit' value='Apply Now')
+                input.form__submit.button.button_accent(type='submit' value='Apply Now')
 
