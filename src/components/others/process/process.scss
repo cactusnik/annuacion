@@ -4,10 +4,14 @@
   background-color: $color-sky;
 
   .process__container {
-    max-width: 830px;
-    padding-top: 100px;
-    padding-bottom: 220px;
+    max-width: 860px;
+    padding: 100px 15px 220px;
     margin: 0 auto;
+
+    @media screen and (max-width: $media-desktop-md) {
+      padding-top: 50px;
+      padding-bottom: 100px;
+    }
   }
 
   .process__header {
@@ -42,6 +46,10 @@
       box-shadow: 0 10px 40px rgba(211, 228, 230, 0.9);
       background-color: #ffc400;
     }
+
+    @media screen and (max-width: $media-desktop-md) {
+      margin-bottom: 70px;
+    }
   }
 
   .process__title {
@@ -66,6 +74,13 @@
       z-index: 0;
       background-color: $color-border;
     }
+
+    @media screen and (max-width: $media-desktop-md) {
+
+      &:after {
+        top: -70px;
+      }
+    }
   }
 
   .process__step {
@@ -74,6 +89,14 @@
 
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: $media-desktop-md) {
+      justify-content: flex-start;
+    }
+
+    @media screen and (max-width: $media-desktop-xl) {
+      display: block;
+    }
   }
 
   .process__step_active {
@@ -109,6 +132,10 @@
     border-radius: 50%;
     background-color: #fff;
     box-shadow: 0 10px 40px rgba(211, 228, 230, 0.9);
+
+    @media screen and (max-width: $media-desktop-md) {
+      margin-bottom: 0;
+    }
   }
 
   .process__svg-fill {
@@ -144,6 +171,23 @@
       transform: rotate(45deg); /* Поворачиваем на 45º */
       -webkit-transform: rotate(45deg);
     }
+
+    @media screen and (max-width: $media-desktop-md) {
+      flex-grow: 1;
+      position: relative;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      max-width: 100%;
+      height: inherit;
+      margin-left: 30px;
+      margin-bottom: 30px;
+
+      &:before {
+        top: 20px;
+      }
+    }
   }
 
   .process__step-content_left {
@@ -155,6 +199,18 @@
       right: -10px;
       top: 37px;
       transform: rotate(225deg); /* Поворачиваем на 225º */
+    }
+
+    @media screen and (max-width: $media-desktop-md) {
+      position: relative;
+      top: 0;
+      left: 0;
+
+      &:before {
+        left: -10px;
+        top: 20px;
+        transform: rotate(45deg); /* Поворачиваем на 45º */
+      }
     }
   }
 
@@ -173,6 +229,24 @@
 
     .process__step-text {
       text-align: center;
+    }
+
+    @media screen and (max-width: $media-desktop-md) {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin-left: 30px;
+
+      &:before {
+        left: -10px;
+        top: 20px;
+        right: auto;
+        transform: rotate(45deg); /* Поворачиваем на 45º */
+      }
+
+      .process__step-text {
+        text-align: inherit;
+      }
     }
   }
 

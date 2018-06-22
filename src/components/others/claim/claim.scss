@@ -30,6 +30,7 @@
     margin-top: 14px;
     color: $color-title;
     font-size: 25px;
+    font-family: $font-bold;
   }
 
   .claim__text {
@@ -37,6 +38,11 @@
     color: $color-text;
     font-size: 15px;
     line-height: 22px;
+    font-family: $font-medium;
+
+    > strong {
+      font-family: $font-bold;
+    }
   }
 
   @media screen and (max-width: $media-desktop-sm) {
