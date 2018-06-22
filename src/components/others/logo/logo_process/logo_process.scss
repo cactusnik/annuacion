@@ -1,10 +1,5 @@
 .logo.logo_process {
-
-  .logo__img {
-    stroke: $color-accent;
-  }
-
-  .logo__text {
-    color: $color-text;
+  .logo__svg-fill {
+    fill: $color-accent;
   }
 }
