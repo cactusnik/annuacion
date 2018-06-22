@@ -1,0 +1,18 @@
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media screen and (max-width: $media-desktop-lg) {
+    max-width: 992px;
+  }
+
+  @media screen and (max-width: $media-desktop-md) {
+    max-width: 768px;
+  }
+
+  @media screen and (max-width: $media-desktop-xl) {
+    padding: 0 10px;
+  }
+
+}

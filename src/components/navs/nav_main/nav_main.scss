@@ -6,18 +6,24 @@
   }
 
   .nav__item {
-    margin: 0 18px;
+    margin: 0 17px;
     line-height: 46px;
   }
 
   .nav__link {
     color: #fff;
+    font-family: $font-medium;
+    font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
 
     &:hover {
-      color: $color-sky;
+      color: $color-accent;
     }
   }
 
+
+  @media screen and (max-width: $media-desktop-sm) {
+    display: none;
+  }
 }

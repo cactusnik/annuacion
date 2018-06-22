@@ -9,6 +9,10 @@
     display: flex;
     width: 208px;
     height: 126px;
+
+    @media screen and (max-width: $media-desktop-sm) {
+      margin: auto;
+    }
   }
 
   .claim__icon {
@@ -16,6 +20,10 @@
 
   .claim__content {
     width: 650px;
+
+    @media screen and (max-width: $media-desktop-sm) {
+      width: inherit;
+    }
   }
 
   .claim__title {
@@ -29,5 +37,10 @@
     color: $color-text;
     font-size: 15px;
     line-height: 22px;
+  }
+
+  @media screen and (max-width: $media-desktop-sm) {
+    display: block;
+    padding: 30px;
   }
 }
