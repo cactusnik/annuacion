@@ -5,7 +5,7 @@
 
   .process__container {
     max-width: 830px;
-    padding-top: 110px;
+    padding-top: 100px;
     padding-bottom: 220px;
     margin: 0 auto;
   }
@@ -25,6 +25,10 @@
     box-shadow: 0 10px 40px rgba(231, 244, 246, 0.9);
   }
 
+  .process__title {
+    color: $color-title;
+  }
+
   .process__list {
     list-style: none;
   }
@@ -34,6 +38,26 @@
 
     display: flex;
     justify-content: center;
+  }
+
+  .process__step_active {
+
+    .process__svg-fill {
+      fill: #fff;
+    }
+
+    .process__icon-wrap {
+      background-color: $color-blue-light;
+    }
+
+    .process__step-content {
+      border: 1px solid $color-blue-light;
+
+      &:before {
+        border-bottom: 1px solid $color-blue-light;
+        border-left: 1px solid $color-blue-light;
+      }
+    }
   }
 
   .process__icon-wrap {
@@ -50,21 +74,21 @@
     background-color: #fff;
     box-shadow: 0 10px 40px rgba(211, 228, 230, 0.9);
   }
-  
-  .process__icon-wrap_active {
-    background-color: $color-blue-light;
+
+  .process__svg-fill {
+    fill: #b9cece;
   }
 
   .process__step-content {
     position: absolute;
     right: 0;
-    top: -28px;
+    top: -25px;
 
     width: 350px;
     height: 200px;
     padding: 30px;
 
-    border: 1px solid #00d7ff;
+    border: 1px solid #deecec;
     border-radius: 5px;
     background-color: #ffffff;
     box-shadow: 0 20px 40px rgba(231, 244, 246, 0.9);
@@ -74,11 +98,11 @@
       position: absolute;
       background: #fff;
       left: -10px;
-      top: 37px;
+      top: 46px;
       width: 18px;
       height: 18px;
-      border-bottom: 1px solid #00d7ff;
-      border-left: 1px solid #00d7ff;
+      border-bottom: 1px solid #deecec;
+      border-left: 1px solid #deecec;
       //box-shadow: 1px 1px 1px #00d7ff; /* Добавляем тень для уголка */
       z-index: 1; /* Прячем за основным блоком */
       transform: rotate(45deg); /* Поворачиваем на 45º */
@@ -89,12 +113,31 @@
   .process__step-content_left {
     left: 0;
     top: -25px;
+
+    &:before {
+      left: auto;
+      right: -10px;
+      top: 37px;
+      transform: rotate(225deg); /* Поворачиваем на 225º */
+    }
   }
 
   .process__step-content_center {
     left: 0;
     top: 95px;
     margin: 0 auto;
+
+    &:before {
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: -10px;
+      transform: rotate(135deg); /* Поворачиваем на 135º */
+    }
+
+    .process__step-text {
+      text-align: center;
+    }
   }
 
   .process__step-title {
