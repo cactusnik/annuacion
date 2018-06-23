@@ -50,6 +50,10 @@
     @media screen and (max-width: $media-desktop-md) {
       margin-bottom: 70px;
     }
+
+    @media screen and (max-width: $media-desktop-xl) {
+      max-width: 300px;
+    }
   }
 
   .process__title {
@@ -136,6 +140,10 @@
     @media screen and (max-width: $media-desktop-md) {
       margin-bottom: 0;
     }
+
+    @media screen and (max-width: $media-desktop-xl) {
+      margin: auto;
+    }
   }
 
   .process__svg-fill {
@@ -188,64 +196,50 @@
         top: 20px;
       }
     }
-  }
 
-  .process__step-content_left {
-    left: 0;
-    top: -25px;
-
-    &:before {
-      left: auto;
-      right: -10px;
-      top: 37px;
-      transform: rotate(225deg); /* Поворачиваем на 225º */
-    }
-
-    @media screen and (max-width: $media-desktop-md) {
-      position: relative;
-      top: 0;
-      left: 0;
+    @media screen and (max-width: $media-desktop-xl) {
+      margin: 30px 0;
+      width: 100%;
 
       &:before {
-        left: -10px;
-        top: 20px;
-        transform: rotate(45deg); /* Поворачиваем на 45º */
+        left: 0;
+        right: 0;
+        top: -10px;
+        margin: auto;
+        transform: rotate(135deg);
       }
     }
   }
 
-  .process__step-content_center {
-    left: 0;
-    top: 95px;
-    margin: 0 auto;
-
-    &:before {
+  @media screen and (min-width: $media-desktop-md){
+    .process__step-content_left {
       left: 0;
-      right: 0;
-      margin: auto;
-      top: -10px;
-      transform: rotate(135deg); /* Поворачиваем на 135º */
-    }
-
-    .process__step-text {
-      text-align: center;
-    }
-
-    @media screen and (max-width: $media-desktop-md) {
-      position: relative;
-      top: 0;
-      left: 0;
-      margin-left: 30px;
+      top: -25px;
 
       &:before {
-        left: -10px;
-        top: 20px;
-        right: auto;
-        transform: rotate(45deg); /* Поворачиваем на 45º */
+        left: auto;
+        right: -10px;
+        top: 37px;
+        transform: rotate(225deg); /* Поворачиваем на 225º */
+      }
+    }
+  }
+  @media screen and (min-width: $media-desktop-md) {
+    .process__step-content_center {
+      left: 0;
+      top: 95px;
+      margin: 0 auto;
+
+      &:before {
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: -10px;
+        transform: rotate(135deg); /* Поворачиваем на 135º */
       }
 
       .process__step-text {
-        text-align: inherit;
+        text-align: center;
       }
     }
   }
