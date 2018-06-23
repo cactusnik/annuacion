@@ -1,2 +1,7 @@
+const common = require ('../../src/bases/common');
 
-console.log('11111');
+$(function() {
+
+    common.init();
+
+});
