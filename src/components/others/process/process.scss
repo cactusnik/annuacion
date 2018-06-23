@@ -58,6 +58,8 @@
 
   .process__title {
     color: $color-title;
+    font-size: 22px;
+    font-family: $font-bold;
   }
 
   .process__list {
@@ -229,6 +231,7 @@
       left: 0;
       top: 95px;
       margin: 0 auto;
+      text-align: center;
 
       &:before {
         left: 0;
@@ -238,18 +241,17 @@
         transform: rotate(135deg); /* Поворачиваем на 135º */
       }
 
-      .process__step-text {
-        text-align: center;
-      }
     }
   }
 
   .process__step-title {
     font-size: 20px;
+    font-family: $font-bold;
   }
 
   .process__step-text {
     font-size: 15px;
     line-height: 23px;
+    font-family: $font-medium;
   }
 }

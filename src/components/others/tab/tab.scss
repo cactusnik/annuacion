@@ -22,6 +22,18 @@
     &:hover {
       color: $color-blue-light;
     }
+
+    @media screen and (max-width: $media-desktop-md) {
+      padding: 10px 30px;
+    }
+
+    @media screen and (max-width: $media-desktop-xl) {
+      padding: 10px 20px;
+
+      > span {
+        display: none;
+      }
+    }
   }
 
   .tab__btn_active {
@@ -40,16 +52,31 @@
       height: 3px;
       background-color: $color-blue-light;
     }
+
+    @media screen and (max-width: $media-desktop-xl) {
+      background-color: $color-blue-light;
+      color: #ffffff;
+      
+      &:after {
+        background-color: #fff;
+      }
+    }
   }
 
   .tab__block {
     display: none;
     margin-top: 56px;
+
+
   }
 
   .tab__block_active {
     display: flex;
     align-items: flex-start;
+
+    @media screen and (max-width: $media-desktop-xl) {
+      display: block;
+    }
   }
 
   .tab__icon-wrap {
@@ -58,10 +85,22 @@
     height: 95px;
     margin-left: 8px;
     margin-top: -5px;
+
+    @media screen and (max-width: $media-desktop-md) {
+      margin-left: 0;
+    }
+
+    @media screen and (max-width: $media-desktop-xl) {
+      margin: 10px auto;
+    }
   }
 
   .tab__content {
     margin-left: 62px;
+
+    @media screen and (max-width: $media-desktop-md){
+      margin-left: 15px;
+    }
   }
 
   .tab__title {
