@@ -28,14 +28,14 @@
     }
 
     @media screen and (max-width: $media-desktop-xl) {
-      padding: 10px 20px;
+      padding: 10px 25px;
 
       > span {
         display: none;
       }
 
       &:hover {
-        color: #fff;
+        color: inherit;
       }
     }
   }
