@@ -55,6 +55,7 @@
     background-color: transparent;
     overflow: hidden;
     transition: right 0.35s ease;
+    cursor: pointer;
 
     @media screen and (max-width: $media-desktop-sm) {
       display: block;
