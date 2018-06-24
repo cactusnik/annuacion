@@ -13,4 +13,23 @@
   .get-started__form {
     margin-top: 19px;
   }
+
+  @media screen and (max-width: $media-desktop-lg) {
+    max-width: 970px;
+    padding: 30px 20px;
+  }
+
+  @media screen and (max-width: $media-desktop-md) {
+    max-width: 740px;
+    padding: 30px;
+  }
+
+  @media screen and (max-width: $media-desktop-sm) {
+    max-width: 560px;
+  }
+
+  @media screen and (max-width: $media-desktop-xl) {
+    max-width: 300px;
+    padding: 20px 10px;
+  }
 }

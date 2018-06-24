@@ -5,20 +5,51 @@
   .form__row-1 {
     flex: 0 0 635px;
     max-width: 635px ;
+
+    @media screen and (max-width: $media-desktop-lg) {
+      flex: 0 0 600px;
+      max-width: 600px ;
+    }
+
+    @media screen and (max-width: $media-desktop-md) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
   }
 
   .form__row-1-2 {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: $media-desktop-sm) {
+      display: block;
+    }
   }
 
   .form__row-1-2-1, .form__row-1-2-2 {
     width: calc((100% - 30px) / 2);
+
+    @media screen and (max-width: $media-desktop-md) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 
   .form__row-2 {
     flex: 0 0 300px;
     max-width: 300px ;
+
+    @media screen and (max-width: $media-desktop-md) {
+      flex: 0 0 100%;
+
+      display: flex;
+      justify-content: space-between;
+      max-width: 100%;
+    }
+
+    @media screen and (max-width: $media-desktop-sm) {
+      display: block;
+    }
   }
 
   .form__row-2-1-1 {
@@ -65,6 +96,12 @@
     background-image: url('../images/content/firstname.svg');
     background-repeat: no-repeat;
     background-position: center center;
+
+    @media screen and (max-width: $media-desktop-xl) {
+      float: left;
+      height: 94px;
+      width: 46px;
+    }
   }
 
   .form__icon_email {
@@ -92,11 +129,41 @@
       border-bottom-right-radius: 5px;
       border-top-right-radius: 5px;
     }
+
+    @media screen and (max-width: $media-desktop-xl) {
+      width: calc((100% - 46px));
+
+      &:last-child {
+        border-left: 0;
+        border-top: 1px solid $color-border;
+      }
+    }
   }
 
   .form__submit {
     width: 100%;
     margin-top: 31px;
     line-height: 27px;
+  }
+
+  @media screen and (max-width: $media-desktop-md) {
+    display: block;
+
+    .form__row-2-1, .form__row-2-2 {
+      width: calc((100% - 30px) / 2);
+    }
+  }
+
+  @media screen and (max-width: $media-desktop-sm) {
+    .form__row-2-1, .form__row-2-2 {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: $media-desktop-xl) {
+    .form__elem_group {
+      display: block;
+      height: auto;
+    }
   }
 }

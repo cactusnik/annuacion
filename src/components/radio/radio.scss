@@ -6,12 +6,20 @@
     display: none;
   }
 
+  .radio__icon-fill {
+    fill: $color-text;
+  }
+
   .radio__hidden-field:checked ~ .radio__element {
     border-color: $color-accent;
   }
 
   .radio__hidden-field:checked ~ .radio__element > .radio__text {
     color: $color-accent;
+  }
+
+  .radio__hidden-field:checked ~ .radio__element > .radio__icon .radio__icon-fill {
+    fill: $color-accent;
   }
 
   .radio__element {
