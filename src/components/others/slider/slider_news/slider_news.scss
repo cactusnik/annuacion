@@ -3,6 +3,7 @@
 
   .slider__list {
     display: flex;
+    list-style: none;
   }
 
   .swiper-slide {
@@ -15,6 +16,10 @@
     @media screen and (max-width: $media-desktop-xl) {
       min-width: initial;
     }
+  }
+
+  .slider__container {
+    padding-bottom: 50px;
   }
 
   .swiper-button-next,
@@ -30,6 +35,10 @@
   }
 
   @media screen and (max-width: $media-desktop-sm) {
+    margin-top: -200px;
+  }
+
+  @media screen and (max-width: $media-desktop-xl) {
     margin-top: -150px;
   }
 }

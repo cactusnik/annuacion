@@ -7,6 +7,10 @@
     height: 250px;
 
     @media screen and (max-width: $media-desktop-sm) {
+      height: 200px;
+    }
+
+    @media screen and (max-width: $media-desktop-xl) {
       height: 150px;
     }
   }
@@ -21,6 +25,14 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     box-shadow: 0 20px 40px rgba(231, 244, 246, 0.9);
+
+    @media screen and (max-width: $media-desktop-sm) {
+      padding: 30px 20px;
+    }
+
+    @media screen and (max-width: $media-desktop-xl) {
+      padding: 20px 15px;
+    }
   }
 
   .news-post__title {
