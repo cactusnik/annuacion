@@ -26,10 +26,12 @@
 
   @media screen and (max-width: $media-desktop-sm) {
     max-width: 560px;
+    margin-bottom: 150px;
   }
 
   @media screen and (max-width: $media-desktop-xl) {
     max-width: 300px;
     padding: 20px 10px;
+    margin-bottom: 100px;
   }
 }

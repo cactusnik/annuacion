@@ -2,13 +2,27 @@
   background-color: $color-blue-dark;
   padding-bottom: 120px;
 
+  .footer__social {
+    position: relative;
+    top: -120px;
+
+    @media screen and (max-width: $media-desktop-md) {
+      top: -70px;
+    }
+  }
+
   .footer__container {
-    max-width: 1030px;
+    max-width: 1060px;
+    padding: 0 15px;
     margin: 0 auto;
   }
 
   .footer__row-1 {
     display: flex;
+
+    @media screen and (max-width: $media-desktop-sm) {
+      display: block;
+    }
   }
 
   .footer__row-2 {
@@ -18,6 +32,10 @@
     margin-top: 17px;
     padding-bottom: 32px;
     border-bottom: 1px solid $color-border;
+
+    @media screen and (max-width: $media-desktop-xl) {
+      display: block;
+    }
   }
 
   .footer__row-3 {
@@ -25,20 +43,45 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 38px;
+
+    @media screen and (max-width: $media-desktop-xl) {
+      display: block;
+    }
   }
 
   .footer__row-4 {
     display: flex;
     margin-top: 16px;
+
+    @media screen and (max-width: $media-desktop-xl) {
+      display: block;
+    }
   }
 
   .footer__contact {
     display: flex;
+
+    @media screen and (max-width: $media-desktop-md) {
+      display: block;
+    }
+
+    @media screen and (max-width: $media-desktop-xl) {
+      margin: 30px 0;
+    }
   }
 
   .footer__contact-item {
     margin-right: 25px;
     display: flex;
+
+    @media screen and (max-width: $media-desktop-md) {
+      margin: 10px 0;
+    }
+
+    @media screen and (max-width: $media-desktop-sm) {
+      display: block;
+    }
+
   }
 
   .footer__contact-title {
@@ -66,6 +109,30 @@
 
     &:last-child {
       margin-right: 0;
+    }
+  }
+
+
+  .footer__form-join {
+    margin-top: 28px;
+    margin-left: 60px;
+
+    @media screen and (max-width: $media-desktop-sm) {
+      margin-top: -30px;
+    }
+
+    @media screen and (max-width: $media-desktop-xl) {
+      margin-left: 0;
+    }
+  }
+
+  @media screen and (max-width: $media-desktop-md) {
+    padding-bottom: 50px;
+  }
+
+  @media screen and (max-width: $media-desktop-xl) {
+    .footer__logo {
+      margin-bottom: 20px;
     }
   }
 }

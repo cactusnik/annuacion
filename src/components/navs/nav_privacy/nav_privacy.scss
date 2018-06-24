@@ -6,6 +6,10 @@
     &:last-child {
       margin-right: 0;
     }
+
+    @media screen and (max-width: $media-desktop-xl) {
+      margin-right: 0;
+    }
   }
 
   .nav__link {
@@ -16,6 +20,13 @@
 
     &:hover {
       color: $color-accent;
+    }
+  }
+
+  @media screen and (max-width: $media-desktop-xl) {
+    .nav__list {
+      display: flex;
+      justify-content: space-between;
     }
   }
 }

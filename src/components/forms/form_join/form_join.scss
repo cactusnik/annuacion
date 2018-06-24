@@ -1,6 +1,4 @@
 .form.form_join {
-  margin-top: 28px;
-  margin-left: 60px;
 
   .form__title {
     margin-bottom: 8px;
@@ -12,6 +10,10 @@
   .form__inp {
     width: 240px;
     padding: 14px;
+
+    @media screen and (max-width: $media-desktop-xl) {
+      width: auto;
+    }
   }
 
   .form__inp {
