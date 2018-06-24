@@ -5,6 +5,10 @@
 
   .news-post__img-wrap {
     height: 250px;
+
+    @media screen and (max-width: $media-desktop-sm) {
+      height: 150px;
+    }
   }
 
   .news-post__img {
@@ -33,5 +37,14 @@
     font-size: 15px;
     font-weight: 500;
     line-height: 23px;
+  }
+
+  @media screen and (max-width: $media-desktop-sm) {
+    width: 400px;
+    margin: auto;
+  }
+
+  @media screen and (max-width: $media-desktop-xl) {
+    width: 300px;
   }
 }

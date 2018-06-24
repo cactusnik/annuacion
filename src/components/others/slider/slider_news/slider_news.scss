@@ -7,6 +7,14 @@
 
   .swiper-slide {
     min-width: 500px;
+
+    @media screen and (max-width: $media-desktop-sm) {
+      min-width: 400px;
+    }
+
+    @media screen and (max-width: $media-desktop-xl) {
+      min-width: initial;
+    }
   }
 
   .swiper-button-next,
@@ -19,5 +27,9 @@
     .swiper-button-prev {
       display: block;
     }
+  }
+
+  @media screen and (max-width: $media-desktop-sm) {
+    margin-top: -150px;
   }
 }
