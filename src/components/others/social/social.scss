@@ -44,4 +44,13 @@
   @media screen and (max-width: $media-desktop-xl) {
     padding: 20px 30px 20px 0;
   }
+
+  .social__link {
+
+    &:hover {
+      .social__svg-fill {
+        fill: $color-text;
+      }
+    }
+  }
 }
